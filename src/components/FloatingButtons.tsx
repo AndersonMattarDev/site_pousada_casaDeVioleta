@@ -3,7 +3,7 @@ import React from 'react'
 export default function FloatingButtons() {
   return (
     <div className="fixed right-4 bottom-6 flex flex-col gap-3 z-50">
-      <a href="#" className="bg-violeta-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 hover:opacity-90 transition">
+      <a href="https://book.securebookings.net/roomrate?id=6289e57c-9863-1727801077-44cb-9577-45a1334be549&lang=br" className="bg-violeta-600 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 hover:opacity-90 transition">
         Reservar Agora
       </a>
       <a href="https://wa.me/5511999999999" className="bg-green-500 text-white px-4 py-3 rounded-full shadow-lg flex items-center gap-2 hover:opacity-90 transition">
