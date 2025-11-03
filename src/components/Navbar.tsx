@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import { Link } from 'react-router-dom'
 
 export default function Navbar() {
   const [open, setOpen] = useState(false)
@@ -6,7 +7,21 @@ export default function Navbar() {
     <header className="fixed top-0 left-0 right-0 bg-white/90 backdrop-blur z-40 shadow-sm">
       <div className="container flex items-center justify-between py-3">
         <div className="flex items-center gap-3">
-          <div className="w-10 h-10 rounded-full bg-violeta-500 flex items-center justify-center text-white font-bold">V</div>
+          {/* Logo: clicking it navigates to home (SPA) and scrolls to top */}
+          <Link
+            to="/"
+            aria-label="Ir para Home"
+            onClick={() => {
+              // close mobile menu if open and scroll to top smoothly
+              setOpen(false)
+              if (typeof window !== 'undefined') {
+                window.scrollTo({ top: 0, behavior: 'smooth' })
+              }
+            }}
+          >
+            {/* use public path: /images/logo.svg */}
+            <img src="/public/images/logo/logo pousada casa da violeta.jpg" alt="Casa de Violeta" className="w-10 h-10 object-cover rounded-full" />
+          </Link>
           <h1 className="text-lg font-semibold">Casa de Violeta</h1>
         </div>
 
