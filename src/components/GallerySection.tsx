@@ -28,9 +28,9 @@ export default function GallerySection() {
       description: 'Varanda com vista para o jardim'
     },
     {
-      src: '/images/gallery/piscina.jpg',
-      title: 'Piscina',
-      description: 'Piscina com área de descanso'
+      src: '/public/images/gallery/buffet.jpg',
+      title: 'Café da Manhã',
+      description: 'Delicioso café da manhã servido na pousada'
     }
   ]
   return (

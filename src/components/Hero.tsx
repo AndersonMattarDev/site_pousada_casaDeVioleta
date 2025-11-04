@@ -2,10 +2,10 @@ import React, { useEffect, useState, useRef } from 'react'
 
 const IMAGES = [
   '/images/gallery/fachada.jpg',
-  'https://picsum.photos/id/1025/1600/900',
-  'https://picsum.photos/id/1015/1600/900',
-  'https://picsum.photos/id/1016/1600/900',
-  'https://picsum.photos/id/1024/1600/900'
+  '/public/images/gallery/varanda.jpg',
+  '/public/images/gallery/patio.jpg',
+  '/public/images/gallery/sofa2.jpg',
+  '/public/images/gallery/sofa.jpg'
 ]
 
 export default function Hero() {
@@ -57,10 +57,9 @@ export default function Hero() {
 
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="text-center text-white px-4 pointer-events-auto">
-          <h2 className="text-3xl md:text-5xl font-extrabold drop-shadow-lg">Pousada Casa de Violeta</h2>
+          <h2 className="text-3xl md:text-5xl font-extrabold drop-shadow-lg" >Pousada Casa de Violeta</h2>
           <p className="mt-3 text-sm md:text-base max-w-xl mx-auto">Conforto, charme e tranquilidade em Tiradentes — venha relaxar rodeado de natureza.</p>
           <div className="mt-6 flex justify-center gap-3">
-            <a href="https://book.securebookings.net/roomrate?id=6289e57c-9863-1727801077-44cb-9577-45a1334be549&lang=br" className="bg-violeta-600 px-6 py-3 rounded-full text-white font-medium shadow-lg">Reservar Agora</a>
             <a href="#" className="bg-white/20 backdrop-blur px-6 py-3 rounded-full text-white font-medium border border-white/30">Saiba Mais</a>
           </div>
         </div>
