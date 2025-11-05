@@ -2,10 +2,11 @@ import React, { useEffect, useState, useRef } from 'react'
 
 const IMAGES = [
   '/images/gallery/fachada.jpg',
-  '/public/images/gallery/varanda.jpg',
-  '/public/images/gallery/patio.jpg',
-  '/public/images/gallery/sofa2.jpg',
-  '/public/images/gallery/sofa.jpg'
+  '/images/gallery/varanda.jpg',
+  '/images/gallery/patio.jpg',
+  '/images/gallery/sofa2.jpg',
+  '/images/gallery/sofa.jpg',
+  '/images/gallery/hall.jpg'
 ]
 
 export default function Hero() {
@@ -57,10 +58,10 @@ export default function Hero() {
 
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="text-center text-white px-4 pointer-events-auto">
-          <h2 className="text-3xl md:text-5xl font-extrabold drop-shadow-lg" >Pousada Casa de Violeta</h2>
-          <p className="mt-3 text-sm md:text-base max-w-xl mx-auto">Conforto, charme e tranquilidade em Tiradentes — venha relaxar rodeado de natureza.</p>
-          <div className="mt-6 flex justify-center gap-3">
-            <a href="#" className="bg-white/20 backdrop-blur px-6 py-3 rounded-full text-white font-medium border border-white/30">Saiba Mais</a>
+          <h2 className="font-cursive text-4xl md:text-6xl drop-shadow-lg mb-2">Bem-Vindo(a) à</h2>
+          <h3 className="font-serif text-3xl md:text-5xl font-light drop-shadow-lg mb-4">Pousada Casa de Violeta</h3>
+          <p className="mt-3 text-sm md:text-base max-w-xl mx-auto font-serif">Conforto, charme e tranquilidade em Tiradentes. A Casa de Violeta Pousada está localizada no centro histórico de Tiradentes, ao lado da Igreja das Mercês e a poucos metros da praça principal — venha relaxar rodeado de natureza.</p>
+          <div className="mt-6 flex justify-center gap-3">            
           </div>
         </div>
       </div>

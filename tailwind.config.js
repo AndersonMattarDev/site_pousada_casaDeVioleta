@@ -2,6 +2,10 @@ export default {
   content: ['./index.html', './src/**/*.{ts,tsx,js,jsx}'],
   theme: {
     extend: {
+      fontFamily: {
+        'cursive': ['Great Vibes', 'cursive'],
+        'serif': ['Lora', 'serif'],
+      },
       colors: {
         violeta: {
           50: '#f5f3ff',
