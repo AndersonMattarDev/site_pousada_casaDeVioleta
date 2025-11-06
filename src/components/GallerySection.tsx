@@ -1,7 +1,8 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
 
 export default function GallerySection() {
   const [currentPage, setCurrentPage] = useState(1);
+  const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const imagesPerPage = 6;
   
   const images = [
@@ -80,13 +81,16 @@ export default function GallerySection() {
 
   return (
     <section className="container py-16">
-      <h3 className="text-3xl font-bold text-center mb-8">Galeria</h3>
+      <h3 className="text-3xl font-bold text-center mb-8">Veja o que te espera!</h3>
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {images
           .slice((currentPage - 1) * imagesPerPage, currentPage * imagesPerPage)
           .map((image, idx) => (
-          <div key={idx} className="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300">
-            <div className="relative group">
+          <div key={idx} className="overflow-hidden rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300 cursor-pointer">
+            <div 
+              className="relative group"
+              onClick={() => setSelectedImage((currentPage - 1) * imagesPerPage + idx)}
+            >
               <img 
                 src={image.src} 
                 alt={image.title}
@@ -147,6 +151,72 @@ export default function GallerySection() {
           Próximo →
         </button>
       </div>
+
+      {/* Lightbox Modal */}
+      {selectedImage !== null && (
+        <div 
+          className="fixed inset-0 bg-black bg-opacity-90 z-50 flex items-center justify-center p-4"
+          onClick={() => setSelectedImage(null)}
+        >
+          {/* Botão Fechar */}
+          <button
+            onClick={() => setSelectedImage(null)}
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
+            aria-label="Fechar"
+          >
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+
+          {/* Botão Anterior */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(prev => prev! > 0 ? prev! - 1 : images.length - 1);
+            }}
+            className="absolute left-4 text-white hover:text-gray-300 transition-colors z-10 bg-black bg-opacity-50 rounded-full p-2"
+            aria-label="Imagem anterior"
+          >
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 19l-7-7 7-7" />
+            </svg>
+          </button>
+
+          {/* Imagem */}
+          <div 
+            className="max-w-5xl max-h-[90vh] flex flex-col items-center"
+            onClick={(e) => e.stopPropagation()}
+          >
+            <img
+              src={images[selectedImage].src}
+              alt={images[selectedImage].title}
+              className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+            />
+            <div className="mt-4 text-center text-white">
+              <h3 className="text-2xl font-bold mb-2">{images[selectedImage].title}</h3>
+              <p className="text-gray-300">{images[selectedImage].description}</p>
+              <p className="text-sm text-gray-400 mt-2">
+                {selectedImage + 1} / {images.length}
+              </p>
+            </div>
+          </div>
+
+          {/* Botão Próximo */}
+          <button
+            onClick={(e) => {
+              e.stopPropagation();
+              setSelectedImage(prev => prev! < images.length - 1 ? prev! + 1 : 0);
+            }}
+            className="absolute right-4 text-white hover:text-gray-300 transition-colors z-10 bg-black bg-opacity-50 rounded-full p-2"
+            aria-label="Próxima imagem"
+          >
+            <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
+            </svg>
+          </button>
+        </div>
+      )}
     </section>
   )
 }

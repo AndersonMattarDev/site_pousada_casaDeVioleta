@@ -20,7 +20,7 @@ export default function Navbar() {
             }}
           >
             {/* use public path: /images/logo.svg */}
-            <img src="/public/images/logo/logo_pousada.jpg" alt="Casa de Violeta" className="w-20 h-20 object-cover rounded-md" />
+            <img src="/images/logo/logo_pousada.jpg" alt="Casa de Violeta" className="w-20 h-20 object-cover rounded-md" />
           </Link>
           
         </div>
