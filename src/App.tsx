@@ -1,6 +1,6 @@
-import React from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero'
+import Diferenciais from './components/diferenciais'
 import GallerySection from './components/GallerySection'
 import ContactSection from './components/ContactSection'
 import Footer from './components/Footer'
@@ -12,6 +12,7 @@ export default function App() {
       <Navbar />
       <main className="flex-1">
         <section id="home"><Hero /></section>
+        <section id="diferenciais" className="pt-24"><Diferenciais /></section>
         <section id="galeria" className="pt-24"><GallerySection /></section>
         <section id="contato" className="pt-24"><ContactSection /></section>
       </main>

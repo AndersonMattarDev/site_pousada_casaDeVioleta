@@ -59,7 +59,7 @@ export default function Hero() {
       <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
         <div className="text-center text-white px-4 pointer-events-auto">
           <h2 className="font-cursive text-4xl md:text-6xl drop-shadow-lg mb-2">Bem-Vindo(a) à</h2>
-          <h3 className="font-serif text-3xl md:text-5xl font-light drop-shadow-lg mb-4">Pousada Casa de Violeta</h3>
+          <h3 className="font-serif text-3xl md:text-5xl font-light drop-shadow-lg mb-4">Casa de Violeta Pousada</h3>
           <p className="mt-3 text-sm md:text-base max-w-xl mx-auto font-serif">Conforto, charme e tranquilidade em Tiradentes. A Casa de Violeta Pousada está localizada no centro histórico de Tiradentes, ao lado da Igreja das Mercês e a poucos metros da praça principal — venha relaxar rodeado de natureza.</p>
           <div className="mt-6 flex justify-center gap-3">            
           </div>
