@@ -28,7 +28,9 @@ export default function Navbar() {
         <nav className="hidden md:flex gap-6 items-center">
           <a href="#home" className="hover:text-violeta-600 text-[20px] font-[700]">Home</a>
           <a href="#galeria" className="hover:text-violeta-600 text-[20px] font-[700]">Galeria</a>
+          <a href="#flats" className="hover:text-violeta-600 text-[20px] font-[700]">Flats</a>
           <a href="#contato" className="hover:text-violeta-600 text-[20px] font-[700]">Contato</a>
+          
         </nav>
 
         <div className="md:hidden">
@@ -45,6 +47,7 @@ export default function Navbar() {
         <div className="flex flex-col p-4 gap-3">
           <a href="#home" onClick={() => setOpen(false)}>Home</a>
           <a href="#galeria" onClick={() => setOpen(false)}>Galeria</a>
+          <a href="#flats" onClick={() => setOpen(false)}>Flats</a>
           <a href="#contato" onClick={() => setOpen(false)}>Contato</a>
         </div>
       </div>

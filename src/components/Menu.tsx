@@ -16,6 +16,7 @@ export default function Menu() {
         <ul className="flex flex-col md:flex-row gap-4">
           <li><Link to="/">Home</Link></li>
           <li><Link to="/galeria">Galeria</Link></li>
+          <li><Link to="/flats">Flats</Link></li>
           <li><Link to="/contato">Contato</Link></li>
         </ul>
       </nav>

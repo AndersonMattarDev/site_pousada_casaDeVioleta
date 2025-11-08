@@ -1,1 +1,0 @@
-export default function Contact() { return <h2 className='text-2xl text-center'>Contato</h2> }
