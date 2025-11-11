@@ -9,55 +9,50 @@ export default function FlatsVitoria() {
 
   const flatVilaVitoriaImages = [
     {
-      src: '/public/images/FlatsVilaVitoria/CopaCozinha2.jpg',
+      src: '/images/FlatsVilaVitoria/CopaCozinha2.jpg',
       title: 'Cozinha sala de estar conjugadas',
       description: 'Charme e praticidade para cozinhar e relaxar!'
     },
     {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0028.jpg',
-      title: 'Flat 01 - Localização',
-      description: 'Localização privilegiada perto de tudo!'
+      src: '/images/FlatsVilaVitoria/CopaCozinha3.jpg',
+      title: 'Sala de estar',
+      description: 'Espaço pensado para relaxar com praticidade!'
     },
     {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0027.jpg',
-      title: 'Flat 01 - Banheiro',
-      description: 'Banheiro completo'
+      src: '/images/FlatsVilaVitoria/externaFlat1.jpg',
+      title: 'Area externa do Flat',
+      description: 'Otimo espaço para lazer e convivência!'
     },    
     {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0029.jpg',
-      title: 'Flat 01 - Banheiro',
-      description: 'Banheiro completo'
+      src: '/images/FlatsVilaVitoria/BanheiroFlat2.jpg',
+      title: 'Banheiro',
+      description: 'Banheiro completo e aconchegante!'
     },
     {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0030.jpg',
-      title: 'Flat 01 - Área de Serviço',
-      description: 'Área de serviço'
+      src: '/images/FlatsVilaVitoria/flat4.jpg',
+      title: 'decoração',
+      description: 'Bom gosto e conforto em cada detalhe!'
     },
     {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0031.jpg',
-      title: 'Flat 01 - Varanda',
-      description: 'Varanda com vista'
+      src: '/images/FlatsVilaVitoria/flat4Decor.jpg',
+      title: 'decoração',
+      description: 'Charme e aconchego para você se sentir em casa!'
     },
     {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0032.jpg',
-      title: 'Flat 01 - Detalhe',
-      description: 'Detalhes do apartamento'
+      src: '/images/FlatsVilaVitoria/Quarto2Flat1.jpeg',
+      title: 'Quarto de solteiro',
+      description: 'Conforto e praticidade para uma boa noite de sono!'
     },
     {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0033.jpg',
-      title: 'Flat 01 - Vista',
-      description: 'Vista do apartamento'
+    src: '/images/FlatsVilaVitoria/QuartoFlat4.jpg',
+      title: 'Quarto casal',
+      description: 'Um refúgio de tranquilidade para relaxar!'
     },
     {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0034.jpg',
-      title: 'Flat 01 - Ambiente',
-      description: 'Ambiente integrado'
-    },
-    {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0035.jpg',
-      title: 'Flat 01 - Espaço',
-      description: 'Espaço amplo e iluminado'
-    }
+      src: '/images/FlatsVilaVitoria/Quarto2Flat2.jpg',
+      title: 'Outro ângulo do quarto de casal',
+      description: 'Detalhes que fazem a diferença no seu descanso!',
+    },    
   ];
 
   
@@ -66,9 +61,17 @@ export default function FlatsVitoria() {
 
 return (
   <section className="container py-16">
-    <h2 className="text-3xl font-bold text-center mb-8">Conheça o Flat Vila Vitória</h2>
-    <p className="text-violeta text-sm text-center mb-8">
-      Reservas para o Flat Vila Vitória somente clicando no botão WhatsApp abaixo:
+    <h2 className="text-3xl font-bold text-center mb-8">Conheça o Flat Vila Vitória | Endereço: Rua Vereador Antônio Coimbra Ferreira, 58, Bairro Cascalho.
+</h2>
+
+<h3 className="text-1xl text-red-600 font-bold text-center mb-8">ATENÇÃO RESERVA NO VILA VITÓRIA É APENAS SEM CAFÉ!!!</h3>  <br />
+    <p className="text-violeta text-md text-center mb-8">
+
+Os 4 novos flats ficam em outro local fora da pousada e a 800 metros da praça principal e 600 metros da rodoviária.Temos estacionamento e cada flat tem uma sala conjugada com cozinha, um banheiro e um quarto com área externa com gramado,(no quarto tem tv, ar condicionado quente e frio, cozinha com fogão, microondas, geladeira, ( utensílios prato, xicara, talheres, panela, frigideira, copo, leiteira, garafa termica de café)  e wi-fi em toda aréa). <br />
+Está incluso roupa de banho e cama, amenitis( shampoo, condicionador,sabonete e touca descartável). 
+O carro pode deixar na pousada quando for no centro
+Não está incluso nas diárias café da manhã, chá da tarde (indicamos alguns parceiro, serviço pago a parte) e limpeza.
+Obs: check-in é feita na pousada casa de violeta, o endereço é Praça das Mercês 100 centro de Tiradentes-MG.
     </p>
 
     {/* Botão de Reserva */}
