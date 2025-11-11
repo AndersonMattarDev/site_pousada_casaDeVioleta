@@ -5,7 +5,7 @@ import ParkingIcon from './icons/ParkingIcon';
 
 export default function Diferenciais() {
   return (
-    <section className="py-16 bg-white">
+    <section className="py-16 bg-violeta-100">
       <div className="container">
         {/* Section Title */}
         <div className="text-center mb-12">

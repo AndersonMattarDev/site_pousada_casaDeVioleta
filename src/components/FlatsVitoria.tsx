@@ -1,8 +1,7 @@
 import { useState } from 'react'
 import WhatsAppIcon from './icons/WhatsAppIcon'
 
-export default function FlatsVitoria() {
-  const [selectedFlat, setSelectedFlat] = useState<1 | 2>(1);
+export default function FlatsVitoria() { 
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
   const imagesPerPage = 6;
@@ -60,19 +59,25 @@ export default function FlatsVitoria() {
   const currentImages = flatVilaVitoriaImages;
 
 return (
-  <section className="container py-16">
+  <section id="vilavitoria" className="container py-16">
     <h2 className="text-3xl font-bold text-center mb-8">Conheça o Flat Vila Vitória | Endereço: Rua Vereador Antônio Coimbra Ferreira, 58, Bairro Cascalho.
 </h2>
 
 <h3 className="text-1xl text-red-600 font-bold text-center mb-8">ATENÇÃO RESERVA NO VILA VITÓRIA É APENAS SEM CAFÉ!!!</h3>  <br />
-    <p className="text-violeta text-md text-center mb-8">
 
-Os 4 novos flats ficam em outro local fora da pousada e a 800 metros da praça principal e 600 metros da rodoviária.Temos estacionamento e cada flat tem uma sala conjugada com cozinha, um banheiro e um quarto com área externa com gramado,(no quarto tem tv, ar condicionado quente e frio, cozinha com fogão, microondas, geladeira, ( utensílios prato, xicara, talheres, panela, frigideira, copo, leiteira, garafa termica de café)  e wi-fi em toda aréa). <br />
+<p className="text-violeta text-md text-justify mb-8 mx-auto max-w-4xl">
+Os 4 novos flats ficam em outro local fora da pousada e a 800 metros da praça principal e 600 metros da rodoviária.
+Temos estacionamento e cada flat tem uma sala conjugada com cozinha, um banheiro e um quarto com área externa com gramado,
+(no quarto tem tv, ar condicionado quente e frio, cozinha com fogão, microondas, geladeira, 
+( utensílios prato, xicara, talheres, panela, frigideira, copo, leiteira, garafa termica de café)  e wi-fi em toda aréa). <br />
+</p>
+
+<p className="text-violeta text-md text-justify mb-8 mx-auto max-w-4xl">
 Está incluso roupa de banho e cama, amenitis( shampoo, condicionador,sabonete e touca descartável). 
 O carro pode deixar na pousada quando for no centro
 Não está incluso nas diárias café da manhã, chá da tarde (indicamos alguns parceiro, serviço pago a parte) e limpeza.
 Obs: check-in é feita na pousada casa de violeta, o endereço é Praça das Mercês 100 centro de Tiradentes-MG.
-    </p>
+</p>
 
     {/* Botão de Reserva */}
     <div className="flex justify-center mb-8">
