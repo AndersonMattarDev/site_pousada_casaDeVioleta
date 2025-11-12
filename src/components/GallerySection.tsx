@@ -82,6 +82,8 @@ export default function GallerySection() {
   return (
     <section className="container py-16">
       <h3 className="text-3xl font-bold text-center mb-8">Conheça mais da pousada!</h3>
+      <span className="text-1xl font-bold text-center">Faça sua reserva clicando no botão: "Reservar Agora"!</span>
+      <br />
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-4">
         {images
           .slice((currentPage - 1) * imagesPerPage, currentPage * imagesPerPage)

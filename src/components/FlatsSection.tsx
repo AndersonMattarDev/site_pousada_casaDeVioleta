@@ -108,7 +108,7 @@ export default function FlatsSection() {
   return (
     <section className="container py-16">
       <h2 className="text-3xl font-bold text-center mb-8">Conheça Nossos Flats</h2>
-      <p className="text-violeta text-sm text-center mb-8">Reservas para os flats somente clicando no botão WhatsApp abaixo:</p>
+      <p className="text-1xl text-red-600 font-bold text-center mb-8">Reservas para os flats somente clicando no botão WhatsApp abaixo:</p>
       
       {/* Seletor de Flats */}
       <div className="flex flex-wrap justify-center gap-4 mb-8">

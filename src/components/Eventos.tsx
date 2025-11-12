@@ -18,26 +18,26 @@ export default function EventosTiradentes() {
 
   const eventos = [
     {
-      nome: "Festival de Cultura e Gastronomia",
-      imagem: "/images/eventos/festival-gastronomia.jpg",
-      descricao:
-        "O mais famoso da cidade! Reúne chefs renomados, música ao vivo e uma experiência gastronômica incrível nas ruas históricas de Tiradentes.",
-      data: "Agosto de cada ano",
-    },
-    {
-      nome: "Mostra de Cinema de Tiradentes",
-      imagem: "/images/eventos/mostra-cinema.jpg",
-      descricao:
-        "Evento gratuito e referência no cinema nacional, com exibições ao ar livre, debates e presença de grandes nomes do audiovisual.",
-      data: "Janeiro",
-    },
-    {
       nome: "Bike Fest Tiradentes",
       imagem: "/images/eventos/bikefest.jpg",
       descricao:
         "Um dos maiores encontros de motociclistas do Brasil. Motos, música e gastronomia tomam conta da cidade durante o evento.",
       data: "Junho",
     },
+    {
+      nome: "Festival de Cultura e Gastronomia",
+      imagem: "/images/eventosPontos/gastronomia.jpg",
+      descricao:
+        "O mais famoso da cidade! Reúne chefs renomados, música ao vivo e uma experiência gastronômica incrível nas ruas históricas de Tiradentes. (creditos da imagem: Nereu Jr. 2022)",
+      data: "Agosto de cada ano",
+    },
+    {
+      nome: "À definir",
+      imagem: "/images/eventos/mostra-cinema.jpg",
+      descricao:
+        "Evento gratuito e referência no cinema nacional, com exibições ao ar livre, debates e presença de grandes nomes do audiovisual.",
+      data: "Janeiro",
+    },    
     {
       nome: "Semana Santa",
       imagem: "/images/eventos/semana-santa.jpg",
@@ -57,15 +57,16 @@ export default function EventosTiradentes() {
   const atrativos = [
     {
       nome: "Igreja Matriz de Santo Antônio",
-      imagem: "/images/atrativos/matriz-santo-antonio.jpg",
+      imagem: "/images/eventosPontos/matriz.jpg",
       descricao:
-        "Uma das mais belas igrejas barrocas do Brasil, com fachada coberta de ouro e vista panorâmica da cidade.",
+        "Uma das mais belas igrejas barrocas do Brasil, com fachada coberta de ouro e vista panorâmica da cidade. (creditos da imagem: Iphan)",
     },
     {
       nome: "Chafariz de São José",
-      imagem: "/images/atrativos/chafariz-sao-jose.jpg",
+      imagem: "/images/eventosPontos/Chafariz_de_São_José.jpg",
       descricao:
         "Construído em 1749, é um dos cartões-postais de Tiradentes e ainda hoje jorra água cristalina.",
+      creditos: "creditos da imagem: Wikimedia Commons",  
     },
     {
       nome: "Museu de Sant’Ana",
@@ -139,6 +140,7 @@ export default function EventosTiradentes() {
             <div className="p-4">
               <h3 className="text-xl font-semibold text-violeta-800 mb-2">{item.nome}</h3>
               <p className="text-gray-600 text-sm mb-3">{item.descricao}</p>
+              
               {"data" in item && (
                 <p className="text-violeta-700 font-medium text-sm">📅 {(item as Evento).data} </p>
               )}

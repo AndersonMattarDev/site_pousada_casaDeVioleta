@@ -63,7 +63,8 @@ return (
     <h2 className="text-3xl font-bold text-center mb-8">Conheça o Flat Vila Vitória | Endereço: Rua Vereador Antônio Coimbra Ferreira, 58, Bairro Cascalho.
 </h2>
 
-<h3 className="text-1xl text-red-600 font-bold text-center mb-8">ATENÇÃO RESERVA NO VILA VITÓRIA É APENAS SEM CAFÉ!!!</h3>  <br />
+<h3 className="text-1xl text-red-600 font-bold text-center mb-8">ATENÇÃO RESERVA NO VILA VITÓRIA É APENAS SEM CAFÉ!!!</h3>  
+<br />
 
 <p className="text-violeta text-md text-justify mb-8 mx-auto max-w-4xl">
 Os 4 novos flats ficam em outro local fora da pousada e a 800 metros da praça principal e 600 metros da rodoviária.
@@ -78,6 +79,9 @@ O carro pode deixar na pousada quando for no centro
 Não está incluso nas diárias café da manhã, chá da tarde (indicamos alguns parceiro, serviço pago a parte) e limpeza.
 Obs: check-in é feita na pousada casa de violeta, o endereço é Praça das Mercês 100 centro de Tiradentes-MG.
 </p>
+<br />
+<h4 className="text-1xl text-red-600 font-bold text-center mb-8">Reservas para os flats somente clicando no botão WhatsApp abaixo:</h4>
+<br />
 
     {/* Botão de Reserva */}
     <div className="flex justify-center mb-8">
