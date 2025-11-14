@@ -5,31 +5,35 @@ type Evento = {
   imagem: string;
   descricao: string;
   data: string;
+  creditos: string;
 };
 
 type Atrativo = {
   nome: string;
   imagem: string;
   descricao: string;
+  creditos: string;
 };
 
 export default function EventosTiradentes() {
   const [modo, setModo] = useState<"eventos" | "atrativos">("eventos");
 
-  const eventos = [
+  const eventos: Evento[] = [
     {
       nome: "Bike Fest Tiradentes",
       imagem: "/images/eventos/bikefest.jpg",
       descricao:
         "Um dos maiores encontros de motociclistas do Brasil. Motos, música e gastronomia tomam conta da cidade durante o evento.",
       data: "Junho",
+      creditos: "Créditos da imagem: Autor desconhecido",
     },
     {
       nome: "Festival de Cultura e Gastronomia",
       imagem: "/images/eventosPontos/gastronomia.jpg",
       descricao:
-        "O mais famoso da cidade! Reúne chefs renomados, música ao vivo e uma experiência gastronômica incrível nas ruas históricas de Tiradentes. (creditos da imagem: Nereu Jr. 2022)",
+        "O mais famoso da cidade! Reúne chefs renomados, música ao vivo e uma experiência gastronômica incrível nas ruas históricas de Tiradentes.",
       data: "Agosto de cada ano",
+      creditos: "Créditos da imagem: Nereu Jr. (2022)",
     },
     {
       nome: "À definir",
@@ -37,13 +41,15 @@ export default function EventosTiradentes() {
       descricao:
         "Evento gratuito e referência no cinema nacional, com exibições ao ar livre, debates e presença de grandes nomes do audiovisual.",
       data: "Janeiro",
-    },    
+      creditos: "Créditos da imagem: Autor desconhecido",
+    },
     {
       nome: "Semana Santa",
       imagem: "/images/eventos/semana-santa.jpg",
       descricao:
         "Celebração tradicional com procissões, música sacra e encenações que encantam visitantes e moradores.",
       data: "Março ou Abril",
+      creditos: "Créditos da imagem: Autor desconhecido",
     },
     {
       nome: "Encontro de Autos Antigos",
@@ -51,44 +57,49 @@ export default function EventosTiradentes() {
       descricao:
         "Evento imperdível para os apaixonados por carros antigos, com exposição e desfiles nas ruas de pedra da cidade.",
       data: "Janeiro",
+      creditos: "Créditos da imagem: Autor desconhecido",
     },
   ];
 
-  const atrativos = [
+  const atrativos: Atrativo[] = [
     {
       nome: "Igreja Matriz de Santo Antônio",
       imagem: "/images/eventosPontos/matriz.jpg",
       descricao:
-        "Uma das mais belas igrejas barrocas do Brasil, com fachada coberta de ouro e vista panorâmica da cidade. (creditos da imagem: Iphan)",
+        "Uma das mais belas igrejas barrocas do Brasil, com fachada coberta de ouro e vista panorâmica da cidade.",
+      creditos: "Créditos da imagem: Iphan",
     },
     {
       nome: "Chafariz de São José",
       imagem: "/images/eventosPontos/Chafariz_de_São_José.jpg",
       descricao:
         "Construído em 1749, é um dos cartões-postais de Tiradentes e ainda hoje jorra água cristalina.",
-      creditos: "creditos da imagem: Wikimedia Commons",  
+      creditos: "Créditos da imagem: Wikimedia Commons",
     },
     {
       nome: "Museu de Sant’Ana",
       imagem: "/images/atrativos/museu-santana.jpg",
       descricao:
         "Instalado em um antigo presídio, abriga mais de 300 imagens de Sant’Ana, símbolo da fé e cultura mineira.",
+      creditos: "Créditos da imagem: Autor desconhecido",
     },
     {
       nome: "Largo das Forras",
       imagem: "/images/atrativos/largo-das-forras.jpg",
       descricao:
         "Coração da cidade, repleto de bares, restaurantes e lojinhas de artesanato. Ideal pra curtir o clima local.",
+      creditos: "Créditos da imagem: Autor desconhecido",
     },
     {
       nome: "Passeio de Maria Fumaça",
       imagem: "/images/atrativos/maria-fumaca.jpg",
       descricao:
         "Viagem nostálgica entre Tiradentes e São João del-Rei em uma locomotiva a vapor — imperdível!",
+      creditos: "Créditos da imagem: Autor desconhecido",
     },
   ];
 
-  const dados: (Evento | Atrativo)[] = modo === "eventos" ? eventos : atrativos;
+  const dados = modo === "eventos" ? eventos : atrativos;
 
   return (
     <section id="eventos-tiradentes" className="container py-16">
@@ -140,10 +151,12 @@ export default function EventosTiradentes() {
             <div className="p-4">
               <h3 className="text-xl font-semibold text-violeta-800 mb-2">{item.nome}</h3>
               <p className="text-gray-600 text-sm mb-3">{item.descricao}</p>
-              
+
               {"data" in item && (
-                <p className="text-violeta-700 font-medium text-sm">📅 {(item as Evento).data} </p>
+                <p className="text-violeta-700 font-medium text-sm">📅 {(item as Evento).data}</p>
               )}
+
+              <p className="text-gray-400 text-xs mt-2">{item.creditos}</p>
             </div>
           </div>
         ))}
@@ -151,3 +164,4 @@ export default function EventosTiradentes() {
     </section>
   );
 }
+

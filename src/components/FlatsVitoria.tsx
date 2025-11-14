@@ -80,7 +80,7 @@ Não está incluso nas diárias café da manhã, chá da tarde (indicamos alguns
 Obs: check-in é feita na pousada casa de violeta, o endereço é Praça das Mercês 100 centro de Tiradentes-MG.
 </p>
 <br />
-<h4 className="text-1xl text-red-600 font-bold text-center mb-8">Reservas para os flats somente clicando no botão WhatsApp abaixo:</h4>
+<h4 className="text-1xl text-red-600 font-bold text-center mb-8">Reservas para os flats Vila Vitória somente clicando no botão WhatsApp abaixo:</h4>
 <br />
 
     {/* Botão de Reserva */}
