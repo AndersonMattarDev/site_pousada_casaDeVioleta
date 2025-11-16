@@ -78,25 +78,53 @@ export default function EventosTiradentes() {
     },
     {
       nome: "Museu de Sant’Ana",
-      imagem: "/images/atrativos/museu-santana.jpg",
+      imagem: "/images/eventosPontos/museu.jpeg",
       descricao:
         "Instalado em um antigo presídio, abriga mais de 300 imagens de Sant’Ana, símbolo da fé e cultura mineira.",
-      creditos: "Créditos da imagem: Autor desconhecido",
+      creditos: "Créditos da imagem: Museu de Sant’Ana",
     },
     {
       nome: "Largo das Forras",
-      imagem: "/images/atrativos/largo-das-forras.jpg",
+      imagem: "/images/eventosPontos/Largo-das-Forras.jpg",
       descricao:
         "Coração da cidade, repleto de bares, restaurantes e lojinhas de artesanato. Ideal pra curtir o clima local.",
-      creditos: "Créditos da imagem: Autor desconhecido",
+      creditos: "Créditos da imagem: Re descobrindo Minas",
     },
     {
       nome: "Passeio de Maria Fumaça",
-      imagem: "/images/atrativos/maria-fumaca.jpg",
+      imagem: "/images/eventosPontos/maria_fumaca.jpg",
       descricao:
         "Viagem nostálgica entre Tiradentes e São João del-Rei em uma locomotiva a vapor — imperdível!",
-      creditos: "Créditos da imagem: Autor desconhecido",
+      creditos: "Créditos da imagem: Wikimedia Commons",
     },
+    {
+      nome: "Museu Casa Padre Toledo",
+      imagem: "/images/eventosPontos/museu_casa_padre_toledo.jpg",
+      descricao:
+        "Um dos pontos mais marcantes de Tiradentes, o Museu Padre Toledo encanta pela arquitetura colonial e pela história da Inconfidência Mineira!",
+      creditos: "Créditos da imagem: A casa senhorial",
+    },
+    {
+      nome: "Cachoeira do Mangue",
+      imagem: "/images/eventosPontos/mangue.jpg",
+      descricao:
+        "Escondida na Serra de São José, a Cachoeira do Mangue é aquele refúgio perfeito de Tiradentes onde a natureza fala mais alto!",
+      creditos: "Créditos da imagem: TripAdvisor.com ",
+    },
+    {
+      nome: "Vilarejo do Bichinho",
+      imagem: "/images/eventosPontos/bichinho.webp",
+      descricao:
+        "Pertinho de Tiradentes, o Vilarejo do Bichinho (Vitoriano Veloso) pulsa com arte, histórias da Inconfidência e o aconchego de um interior mineiro que encanta.",
+      creditos: "Créditos da imagem: Elizabeth Werneck ",
+    },
+    {
+      nome: "Museu do Automóvel",
+      imagem: "/images/eventosPontos/automovel.jpg",
+      descricao:
+        "No caminho para o vilarejo do Bichinho, o Museu do Automóvel exibe uma coleção fascinante de carros antigos que encantam os visitantes.",
+      creditos: "Créditos da imagem: tripadvisor.com ",
+    }
   ];
 
   const dados = modo === "eventos" ? eventos : atrativos;
