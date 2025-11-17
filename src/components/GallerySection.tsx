@@ -209,7 +209,7 @@ const pousadaImages = [
       </h3>
 
       <span className="text-1xl font-bold text-center">
-        Para reserva e maiores informações clicando no botão: "Reservar Agora"!
+        Para reserva e maiores informações clique no botão: "Reservar Agora"!
       </span>
 
       <br /><br />

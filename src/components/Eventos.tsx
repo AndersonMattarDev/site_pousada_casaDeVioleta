@@ -20,45 +20,54 @@ export default function EventosTiradentes() {
 
   const eventos: Evento[] = [
     {
+      nome: "Mostra de Cinema de Tiradentes",
+      imagem: "/images/eventosPontos/cinema.jpg",
+      descricao:
+        "Evento gratuito e referência no cinema nacional, com exibições ao ar livre, debates e presença de grandes nomes do audiovisual.",
+      data: "Janeiro",
+      creditos: "Créditos da imagem: Agenda BH",
+    },
+    {
+      nome: "Desafio Real MTB",
+      imagem: "/images/eventosPontos/desafio_real.jpg",
+      descricao:
+        "O Desafio Real MTB é um evento esportivo de bike com uma pegada de ecoturismo, pois trata-se de um passeio pelas trilhas da Estrada Real que encantam os participantes.",
+      data: "Abril",
+      creditos: "Desafio Real MTB",
+    },
+    {
+      nome: "Trem Bier Festival de Cerveja",
+      imagem: "/images/eventosPontos/trem_bier.png",
+      descricao:
+        "Evento imperdível para que aprecia cervejas artesanais e música ao vivo.",
+      data: "Maio",
+      creditos: "Créditos da imagem: Corridao.com",
+    },
+    {
       nome: "Bike Fest Tiradentes",
-      imagem: "/images/eventos/bikefest.jpg",
+      imagem: "/images/eventosPontos/bike_fest.jpg",
       descricao:
         "Um dos maiores encontros de motociclistas do Brasil. Motos, música e gastronomia tomam conta da cidade durante o evento.",
       data: "Junho",
-      creditos: "Créditos da imagem: Autor desconhecido",
+      creditos: "Créditos da imagem: Tribus/Divulgação",
+    },
+    {
+      nome: "Vinho e Jazz Festival",
+      imagem: "/images/eventosPontos/festival_vinho.jpg",
+      descricao:
+        "Este festival reune os melhores vinhos e jazz em um ambiente encantador.",
+      data: "Junho",
+      creditos: "Créditos da imagem: Divulgação/Wine Locals",
     },
     {
       nome: "Festival de Cultura e Gastronomia",
       imagem: "/images/eventosPontos/gastronomia.jpg",
       descricao:
         "O mais famoso da cidade! Reúne chefs renomados, música ao vivo e uma experiência gastronômica incrível nas ruas históricas de Tiradentes.",
-      data: "Agosto de cada ano",
+      data: "Agosto",
       creditos: "Créditos da imagem: Nereu Jr. (2022)",
     },
-    {
-      nome: "À definir",
-      imagem: "/images/eventos/mostra-cinema.jpg",
-      descricao:
-        "Evento gratuito e referência no cinema nacional, com exibições ao ar livre, debates e presença de grandes nomes do audiovisual.",
-      data: "Janeiro",
-      creditos: "Créditos da imagem: Autor desconhecido",
-    },
-    {
-      nome: "Semana Santa",
-      imagem: "/images/eventos/semana-santa.jpg",
-      descricao:
-        "Celebração tradicional com procissões, música sacra e encenações que encantam visitantes e moradores.",
-      data: "Março ou Abril",
-      creditos: "Créditos da imagem: Autor desconhecido",
-    },
-    {
-      nome: "Encontro de Autos Antigos",
-      imagem: "/images/eventos/autos-antigos.jpg",
-      descricao:
-        "Evento imperdível para os apaixonados por carros antigos, com exposição e desfiles nas ruas de pedra da cidade.",
-      data: "Janeiro",
-      creditos: "Créditos da imagem: Autor desconhecido",
-    },
+    
   ];
 
   const atrativos: Atrativo[] = [
@@ -158,9 +167,9 @@ export default function EventosTiradentes() {
         </button>
       </div>
 
-      <p className="text-violeta text-md text-justify mb-12 mx-auto max-w-4xl">
+      <p className="text-violeta text-md text-justify mb-12 mx-auto max-w-4xl whitespace-pre-line">
         {modo === "eventos"
-          ? "Tiradentes é palco de diversos eventos culturais e gastronômicos que encantam visitantes durante todo o ano."
+          ? "Tiradentes é palco de diversos eventos culturais e gastronômicos que encantam visitantes durante todo o ano. \n  Obs: As datas podem variar a cada ano, confira nos canais oficiais!"
           : "Conheça os principais pontos turísticos da charmosa cidade de Tiradentes, repletos de história, arte e beleza natural."}
       </p>
 
