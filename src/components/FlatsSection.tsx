@@ -32,12 +32,7 @@ export default function FlatsSection() {
       src: '/images/Flats/flat 01/IMG-20240601-WA0030.jpg',
       title: 'Flat 01 - Área de Serviço',
       description: 'Área de serviço'
-    },
-    {
-      src: '/images/Flats/flat 01/IMG-20240601-WA0031.jpg',
-      title: 'Flat 01 - Varanda',
-      description: 'Varanda com vista'
-    },
+    },    
     {
       src: '/images/Flats/flat 01/IMG-20240601-WA0032.jpg',
       title: 'Flat 01 - Detalhe',
@@ -68,38 +63,38 @@ export default function FlatsSection() {
     },
     {
       src: '/images/Flats/flat 02/IMG-20240601-WA0037.jpg',
-      title: 'Flat 02 - Quarto',
-      description: 'Quarto aconchegante'
+      title: 'Flat 02 - Espaço Externo',
+      description: 'Espaço para relaxar'
     },
     {
       src: '/images/Flats/flat 02/IMG-20240601-WA0038.jpg',
-      title: 'Flat 02 - Cozinha',
-      description: 'Cozinha equipada'
+      title: 'Flat 02 - Charme',
+      description: 'Charme e Aconchego'
     },
     {
       src: '/images/Flats/flat 02/IMG-20240601-WA0039.jpg',
-      title: 'Flat 02 - Banheiro',
-      description: 'Banheiro completo'
+      title: 'Flat 02 - Detalhes',
+      description: 'Cada detalhe pensado para seu conforto'
     },
     {
       src: '/images/Flats/flat 02/IMG-20240601-WA0040.jpg',
-      title: 'Flat 02 - Área de Serviço',
-      description: 'Área de serviço'
+      title: 'Flat 02 - Cozinha',
+      description: 'Área perfeita para preparar aquela comidinha gostosa'
     },
     {
       src: '/images/Flats/flat 02/IMG-20240601-WA0042.jpg',
-      title: 'Flat 02 - Varanda',
-      description: 'Varanda com vista'
+      title: 'Flat 02 - Banheiro',
+      description: 'Banheiro perfeito para um banho relaxante'
     },
     {
       src: '/images/Flats/flat 02/IMG-20240601-WA0043.jpg',
-      title: 'Flat 02 - Detalhe',
-      description: 'Detalhes do apartamento'
+      title: 'Flat 02 - Sala',
+      description: 'Ambiente perfeito para descançar'
     },
     {
       src: '/images/Flats/flat 02/IMG-20240601-WA0044.jpg',
-      title: 'Flat 02 - Vista',
-      description: 'Vista do apartamento'
+      title: 'Flat 02 - Quarto',
+      description: 'Depois de um dia com muito passeio, um quarto confortavel te espera'
     }
   ];
 

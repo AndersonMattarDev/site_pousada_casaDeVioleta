@@ -27,7 +27,7 @@ export default function Navbar() {
 
         <nav className="hidden md:flex gap-6 items-center">
           <a href="#home" className="hover:text-violeta-600 text-[20px] font-[700]">Home</a>
-          <a href="#galeria" className="hover:text-violeta-600 text-[20px] font-[700]">Galeria</a>
+          <a href="#galeria" className="hover:text-violeta-600 text-[20px] font-[700]">Conheça Mais</a>
           <a href="#flats" className="hover:text-violeta-600 text-[20px] font-[700]">Flats</a>
           <a href="#vilavitoria" className="hover:text-violeta-600 text-[20px] font-[700]">Vila Vitória</a>
           <a href="/#eventos-tiradentes" className="hover:text-violeta-600 text-[20px] font-[700]">Eventos/Pontos Turísticos</a>
@@ -48,7 +48,7 @@ export default function Navbar() {
       <div className={`md:hidden ${open ? 'block' : 'hidden'} bg-white/95 border-t`}>
         <div className="flex flex-col p-4 gap-3">
           <a href="#home" onClick={() => setOpen(false)}>Home</a>
-          <a href="#galeria" onClick={() => setOpen(false)}>Galeria</a>
+          <a href="#galeria" onClick={() => setOpen(false)}>Conheça Mais</a>
           <a href="#flats" onClick={() => setOpen(false)}>Flats</a>
           <a href="#vilavitoria" onClick={() => setOpen(false)}>Vila Vitória</a>
           <a href="/#eventos-tiradentes" onClick={() => setOpen(false)}>Eventos/Pontos Turísticos</a>

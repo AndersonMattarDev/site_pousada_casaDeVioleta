@@ -39,8 +39,8 @@ export default function FlatsVitoria() {
     },
     {
       src: '/images/FlatsVilaVitoria/Quarto2Flat1.jpeg',
-      title: 'Quarto de solteiro',
-      description: 'Conforto e praticidade para uma boa noite de sono!'
+      title: 'Configuração',
+      description: 'Os flats Vitória dispoem de somente um quarto porém, na sala tem sofa cama para acomodar mais pessoas!'
     },
     {
     src: '/images/FlatsVilaVitoria/QuartoFlat4.jpg',
@@ -74,10 +74,10 @@ Temos estacionamento e cada flat tem uma sala conjugada com cozinha, um banheiro
 </p>
 
 <p className="text-violeta text-md text-justify mb-8 mx-auto max-w-4xl">
-Está incluso roupa de banho e cama, amenitis( shampoo, condicionador,sabonete e touca descartável). 
-O carro pode deixar na pousada quando for no centro
-Não está incluso nas diárias café da manhã, chá da tarde (indicamos alguns parceiro, serviço pago a parte) e limpeza.
-Obs: check-in é feita na pousada casa de violeta, o endereço é Praça das Mercês 100 centro de Tiradentes-MG.
+Está incluso roupa de banho e cama, amenitis( shampoo, condicionador, sabonete e touca descartável). 
+O carro pode ser deixado na pousada quando for no centro
+Não está incluso nas diárias café da manhã, chá da tarde (indicamos alguns parceiros, serviço pago a parte) e limpeza.
+Obs: check-in é feito na pousada casa de violeta, o endereço é Praça das Mercês 100 centro de Tiradentes-MG.
 </p>
 <br />
 <h4 className="text-1xl text-red-600 font-bold text-center mb-8">Reservas para os flats Vila Vitória somente clicando no botão WhatsApp abaixo:</h4>

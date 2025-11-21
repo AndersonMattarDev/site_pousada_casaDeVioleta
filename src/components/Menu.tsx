@@ -15,7 +15,7 @@ export default function Menu() {
       <nav className={`${open ? "block" : "hidden"} md:block mt-2`}>
         <ul className="flex flex-col md:flex-row gap-4">
           <li><Link to="/">Home</Link></li>
-          <li><Link to="/galeria">Galeria</Link></li>
+          <li><Link to="/galeria">Conheça mais</Link></li>
           <li><Link to="/flats">Flats</Link></li>
           <li><Link to="/vilavitoria">Vila Vitória</Link></li>
           <li><Link to="/eventos-pontos">Eventos/Pontos Turísticos</Link></li>

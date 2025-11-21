@@ -31,15 +31,15 @@ export default function EventosTiradentes() {
       nome: "Desafio Real MTB",
       imagem: "/images/eventosPontos/desafio_real.jpg",
       descricao:
-        "O Desafio Real MTB é um evento esportivo de bike com uma pegada de ecoturismo, pois trata-se de um passeio pelas trilhas da Estrada Real que encantam os participantes.",
+        "O Desafio Real MTB é um evento esportivo de bike com uma pegada de ecoturismo.",
       data: "Abril",
-      creditos: "Desafio Real MTB",
+      creditos: "Créditos da imagem: Desafio Real MTB",
     },
     {
       nome: "Trem Bier Festival de Cerveja",
       imagem: "/images/eventosPontos/trem_bier.png",
       descricao:
-        "Evento imperdível para que aprecia cervejas artesanais e música ao vivo.",
+        "Evento imperdível para quem aprecia cervejas artesanais e música ao vivo.",
       data: "Maio",
       creditos: "Créditos da imagem: Corridao.com",
     },
@@ -47,7 +47,7 @@ export default function EventosTiradentes() {
       nome: "Bike Fest Tiradentes",
       imagem: "/images/eventosPontos/bike_fest.jpg",
       descricao:
-        "Um dos maiores encontros de motociclistas do Brasil. Motos, música e gastronomia tomam conta da cidade durante o evento.",
+        "Um dos maiores encontros de motociclistas do Brasil.",
       data: "Junho",
       creditos: "Créditos da imagem: Tribus/Divulgação",
     },
@@ -55,7 +55,7 @@ export default function EventosTiradentes() {
       nome: "Vinho e Jazz Festival",
       imagem: "/images/eventosPontos/festival_vinho.jpg",
       descricao:
-        "Este festival reune os melhores vinhos e jazz em um ambiente encantador.",
+        "Este festival reúne excelentes vinhos e jazz em um ambiente encantador.",
       data: "Junho",
       creditos: "Créditos da imagem: Divulgação/Wine Locals",
     },
@@ -63,11 +63,10 @@ export default function EventosTiradentes() {
       nome: "Festival de Cultura e Gastronomia",
       imagem: "/images/eventosPontos/gastronomia.jpg",
       descricao:
-        "O mais famoso da cidade! Reúne chefs renomados, música ao vivo e uma experiência gastronômica incrível nas ruas históricas de Tiradentes.",
+        "O mais famoso da cidade! Reúne chefs renomados, música e uma experiência única.",
       data: "Agosto",
       creditos: "Créditos da imagem: Nereu Jr. (2022)",
     },
-    
   ];
 
   const atrativos: Atrativo[] = [
@@ -75,65 +74,23 @@ export default function EventosTiradentes() {
       nome: "Igreja Matriz de Santo Antônio",
       imagem: "/images/eventosPontos/matriz.jpg",
       descricao:
-        "Uma das mais belas igrejas barrocas do Brasil, com fachada coberta de ouro e vista panorâmica da cidade.",
+        "Uma das mais belas igrejas barrocas do Brasil.",
       creditos: "Créditos da imagem: Iphan",
     },
     {
       nome: "Chafariz de São José",
       imagem: "/images/eventosPontos/Chafariz_de_São_José.jpg",
       descricao:
-        "Construído em 1749, é um dos cartões-postais de Tiradentes e ainda hoje jorra água cristalina.",
+        "Construído em 1749, cartão-postal clássico da cidade.",
       creditos: "Créditos da imagem: Wikimedia Commons",
     },
     {
       nome: "Museu de Sant’Ana",
       imagem: "/images/eventosPontos/museu.jpeg",
       descricao:
-        "Instalado em um antigo presídio, abriga mais de 300 imagens de Sant’Ana, símbolo da fé e cultura mineira.",
+        "Instalado em um antigo presídio, com mais de 300 imagens sacras.",
       creditos: "Créditos da imagem: Museu de Sant’Ana",
     },
-    {
-      nome: "Largo das Forras",
-      imagem: "/images/eventosPontos/Largo-das-Forras.jpg",
-      descricao:
-        "Coração da cidade, repleto de bares, restaurantes e lojinhas de artesanato. Ideal pra curtir o clima local.",
-      creditos: "Créditos da imagem: Re descobrindo Minas",
-    },
-    {
-      nome: "Passeio de Maria Fumaça",
-      imagem: "/images/eventosPontos/maria_fumaca.jpg",
-      descricao:
-        "Viagem nostálgica entre Tiradentes e São João del-Rei em uma locomotiva a vapor — imperdível!",
-      creditos: "Créditos da imagem: Wikimedia Commons",
-    },
-    {
-      nome: "Museu Casa Padre Toledo",
-      imagem: "/images/eventosPontos/museu_casa_padre_toledo.jpg",
-      descricao:
-        "Um dos pontos mais marcantes de Tiradentes, o Museu Padre Toledo encanta pela arquitetura colonial e pela história da Inconfidência Mineira!",
-      creditos: "Créditos da imagem: A casa senhorial",
-    },
-    {
-      nome: "Cachoeira do Mangue",
-      imagem: "/images/eventosPontos/mangue.jpg",
-      descricao:
-        "Escondida na Serra de São José, a Cachoeira do Mangue é aquele refúgio perfeito de Tiradentes onde a natureza fala mais alto!",
-      creditos: "Créditos da imagem: TripAdvisor.com ",
-    },
-    {
-      nome: "Vilarejo do Bichinho",
-      imagem: "/images/eventosPontos/bichinho.webp",
-      descricao:
-        "Pertinho de Tiradentes, o Vilarejo do Bichinho (Vitoriano Veloso) pulsa com arte, histórias da Inconfidência e o aconchego de um interior mineiro que encanta.",
-      creditos: "Créditos da imagem: Elizabeth Werneck ",
-    },
-    {
-      nome: "Museu do Automóvel",
-      imagem: "/images/eventosPontos/automovel.jpg",
-      descricao:
-        "No caminho para o vilarejo do Bichinho, o Museu do Automóvel exibe uma coleção fascinante de carros antigos que encantam os visitantes.",
-      creditos: "Créditos da imagem: tripadvisor.com ",
-    }
   ];
 
   const dados = modo === "eventos" ? eventos : atrativos;
@@ -167,11 +124,31 @@ export default function EventosTiradentes() {
         </button>
       </div>
 
-      <p className="text-violeta text-md text-justify mb-12 mx-auto max-w-4xl whitespace-pre-line">
+      <p className="text-violeta text-md text-justify mb-8 mx-auto max-w-4xl whitespace-pre-line">
         {modo === "eventos"
-          ? "Tiradentes é palco de diversos eventos culturais e gastronômicos que encantam visitantes durante todo o ano. \n  Obs: As datas podem variar a cada ano, confira nos canais oficiais!"
-          : "Conheça os principais pontos turísticos da charmosa cidade de Tiradentes, repletos de história, arte e beleza natural."}
+          ? "Tiradentes recebe eventos culturais e gastronômicos ao longo do ano. As datas podem variar, confira nos canais oficiais!"
+          : "Conheça os principais pontos turísticos da cidade, repletos de história, arte e natureza."}
       </p>
+
+      {modo === "eventos" && (
+  <div className="bg-violeta-200 text-violeta-900 p-3 rounded-lg mb-10 max-w-2xl mx-auto text-sm">
+    <p className="font-semibold mb-1">📄 Arquivos com todos os eventos de Tiradentes:</p>
+    <a
+      href="/public/data/PrimeiroSemestre.pdf"
+      target="_blank"
+      className="underline block hover:text-violeta-700"
+    >
+      • Lista completa – Eventos 1° Semestre
+    </a>
+    <a
+      href="https://www.tiradentes.mg.gov.br/pagina/10626/Calend%C3%A1rio%20de%20Eventos"
+      target="_blank"
+      className="underline block hover:text-violeta-700"
+    >
+      • Lista completa – Eventos 2° Semestre
+    </a>
+  </div>
+)}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
         {dados.map((item, idx) => (
@@ -190,7 +167,7 @@ export default function EventosTiradentes() {
               <p className="text-gray-600 text-sm mb-3">{item.descricao}</p>
 
               {"data" in item && (
-                <p className="text-violeta-700 font-medium text-sm">📅 {(item as Evento).data}</p>
+                <p className="text-violeta-700 font-medium text-sm">📅 {item.data}</p>
               )}
 
               <p className="text-gray-400 text-xs mt-2">{item.creditos}</p>
