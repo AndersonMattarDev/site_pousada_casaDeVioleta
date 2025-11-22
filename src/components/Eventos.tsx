@@ -70,27 +70,7 @@ export default function EventosTiradentes() {
   ];
 
   const atrativos: Atrativo[] = [
-    {
-      nome: "Igreja Matriz de Santo Antônio",
-      imagem: "/images/eventosPontos/matriz.jpg",
-      descricao:
-        "Uma das mais belas igrejas barrocas do Brasil.",
-      creditos: "Créditos da imagem: Iphan",
-    },
-    {
-      nome: "Chafariz de São José",
-      imagem: "/images/eventosPontos/Chafariz_de_São_José.jpg",
-      descricao:
-        "Construído em 1749, cartão-postal clássico da cidade.",
-      creditos: "Créditos da imagem: Wikimedia Commons",
-    },
-    {
-      nome: "Museu de Sant’Ana",
-      imagem: "/images/eventosPontos/museu.jpeg",
-      descricao:
-        "Instalado em um antigo presídio, com mais de 300 imagens sacras.",
-      creditos: "Créditos da imagem: Museu de Sant’Ana",
-    },
+    { nome: "Igreja Matriz de Santo Antônio", imagem: "/images/eventosPontos/matriz.jpg", descricao: "Uma das mais belas igrejas barrocas do Brasil, com fachada coberta de ouro e vista panorâmica da cidade.", creditos: "Créditos da imagem: Iphan", }, { nome: "Chafariz de São José", imagem: "/images/eventosPontos/Chafariz_de_São_José.jpg", descricao: "Construído em 1749, é um dos cartões-postais de Tiradentes e ainda hoje jorra água cristalina.", creditos: "Créditos da imagem: Wikimedia Commons", }, { nome: "Museu de Sant’Ana", imagem: "/images/eventosPontos/museu.jpeg", descricao: "Instalado em um antigo presídio, abriga mais de 300 imagens de Sant’Ana, símbolo da fé e cultura mineira.", creditos: "Créditos da imagem: Museu de Sant’Ana", }, { nome: "Largo das Forras", imagem: "/images/eventosPontos/Largo-das-Forras.jpg", descricao: "Coração da cidade, repleto de bares, restaurantes e lojinhas de artesanato. Ideal pra curtir o clima local.", creditos: "Créditos da imagem: Re descobrindo Minas", }, { nome: "Passeio de Maria Fumaça", imagem: "/images/eventosPontos/maria_fumaca.jpg", descricao: "Viagem nostálgica entre Tiradentes e São João del-Rei em uma locomotiva a vapor — imperdível!", creditos: "Créditos da imagem: Wikimedia Commons", }, { nome: "Museu Casa Padre Toledo", imagem: "/images/eventosPontos/museu_casa_padre_toledo.jpg", descricao: "Um dos pontos mais marcantes de Tiradentes, o Museu Padre Toledo encanta pela arquitetura colonial e pela história da Inconfidência Mineira!", creditos: "Créditos da imagem: A casa senhorial", }, { nome: "Cachoeira do Mangue", imagem: "/images/eventosPontos/mangue.jpg", descricao: "Escondida na Serra de São José, a Cachoeira do Mangue é aquele refúgio perfeito de Tiradentes onde a natureza fala mais alto!", creditos: "Créditos da imagem: TripAdvisor.com ", }, { nome: "Vilarejo do Bichinho", imagem: "/images/eventosPontos/bichinho.webp", descricao: "Pertinho de Tiradentes, o Vilarejo do Bichinho (Vitoriano Veloso) pulsa com arte, histórias da Inconfidência e o aconchego de um interior mineiro que encanta.", creditos: "Créditos da imagem: Elizabeth Werneck ", }, { nome: "Museu do Automóvel", imagem: "/images/eventosPontos/automovel.jpg", descricao: "No caminho para o vilarejo do Bichinho, o Museu do Automóvel exibe uma coleção fascinante de carros antigos que encantam os visitantes.", creditos: "Créditos da imagem: tripadvisor.com ", }
   ];
 
   const dados = modo === "eventos" ? eventos : atrativos;
@@ -130,22 +110,16 @@ export default function EventosTiradentes() {
           : "Conheça os principais pontos turísticos da cidade, repletos de história, arte e natureza."}
       </p>
 
-      {modo === "eventos" && (
+{modo === "eventos" && (
   <div className="bg-violeta-200 text-violeta-900 p-3 rounded-lg mb-10 max-w-2xl mx-auto text-sm">
-    <p className="font-semibold mb-1">📄 Arquivos com todos os eventos de Tiradentes:</p>
-    <a
-      href="/public/data/PrimeiroSemestre.pdf"
-      target="_blank"
-      className="underline block hover:text-violeta-700"
-    >
-      • Lista completa – Eventos 1° Semestre
-    </a>
+    <p className="font-semibold mb-1">📄 Para conferir a lista completa de eventos em Tiradentes:</p>    
     <a
       href="https://www.tiradentes.mg.gov.br/pagina/10626/Calend%C3%A1rio%20de%20Eventos"
       target="_blank"
+      rel="noopener noreferrer"
       className="underline block hover:text-violeta-700"
     >
-      • Lista completa – Eventos 2° Semestre
+      • Clique e confira o calendario anual oficial de eventos.
     </a>
   </div>
 )}
@@ -167,7 +141,7 @@ export default function EventosTiradentes() {
               <p className="text-gray-600 text-sm mb-3">{item.descricao}</p>
 
               {"data" in item && (
-                <p className="text-violeta-700 font-medium text-sm">📅 {item.data}</p>
+                <p className="text-violeta-700 font-medium text-sm">📅 {(item as Evento).data}</p>
               )}
 
               <p className="text-gray-400 text-xs mt-2">{item.creditos}</p>
