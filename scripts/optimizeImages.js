@@ -2,6 +2,8 @@ const sharp = require('sharp');
 const fs = require('fs').promises;
 const path = require('path');
 
+const verbose = process.argv.includes('--verbose') || process.env.VERBOSE === '1'
+
 // Configurações de tamanhos para diferentes dispositivos
 const sizes = {
   sm: { width: 400, height: 300 },    // Mobile
@@ -22,13 +24,13 @@ async function optimizeImages() {
     for (const file of files) {
       if (!['.jpg', '.jpeg', '.png'].includes(path.extname(file).toLowerCase())) continue;
       
-      console.log(`\nOtimizando: ${file}`);
+      if (verbose) console.log(`\nOtimizando: ${file}`);
       const inputPath = path.join(galleryDir, file);
       const filename = path.parse(file).name;
 
       // Processar cada tamanho
       for (const [size, dimensions] of Object.entries(sizes)) {
-        console.log(`  Criando versão ${size}...`);
+        if (verbose) console.log(`  Criando versão ${size}...`);
         
         // WebP version (melhor compressão, navegadores modernos)
         await sharp(inputPath)
@@ -60,8 +62,10 @@ async function optimizeImages() {
         .toFile(path.join(optimizedDir, `${filename}-thumb.webp`));
     }
 
-    console.log('\n✨ Otimização concluída!');
-    console.log('📁 Imagens salvas em: public/images/gallery-optimized');
+    if (verbose) {
+      console.log('\n✨ Otimização concluída!');
+      console.log('📁 Imagens salvas em: public/images/gallery-optimized');
+    }
     
   } catch (err) {
     console.error('❌ Erro durante a otimização:', err);

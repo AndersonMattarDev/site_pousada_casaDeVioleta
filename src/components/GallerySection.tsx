@@ -1,4 +1,4 @@
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 
 export default function GallerySection() {
   const [suiteTipo, setSuiteTipo] =
@@ -6,6 +6,7 @@ export default function GallerySection() {
 
   const [currentPage, setCurrentPage] = useState(1);
   const [selectedImage, setSelectedImage] = useState<number | null>(null);
+  const [imageVisible, setImageVisible] = useState(true);
   const imagesPerPage = 6;
 
   // =============================
@@ -202,6 +203,32 @@ const pousadaImages = [
       ? suitesExternasImages
       : pousadaImages;
 
+  // Keyboard navigation for lightbox: Esc to close, ArrowLeft/ArrowRight to navigate
+  useEffect(() => {
+    function onKey(e: KeyboardEvent) {
+      if (selectedImage === null) return
+      if (e.key === 'Escape') {
+        setSelectedImage(null)
+      } else if (e.key === 'ArrowLeft') {
+        setSelectedImage((selectedImage - 1 + activeImages.length) % activeImages.length)
+      } else if (e.key === 'ArrowRight') {
+        setSelectedImage((selectedImage + 1) % activeImages.length)
+      }
+    }
+
+    window.addEventListener('keydown', onKey)
+    return () => window.removeEventListener('keydown', onKey)
+    // we intentionally include selectedImage and activeImages.length
+  }, [selectedImage, activeImages.length])
+
+  // manage fade animation when selectedImage changes
+  useEffect(() => {
+    if (selectedImage === null) return
+    setImageVisible(false)
+    const t = window.setTimeout(() => setImageVisible(true), 30)
+    return () => clearTimeout(t)
+  }, [selectedImage])
+
   return (
     <section className="container py-16">
       <h3 className="text-3xl font-bold text-center mb-8">
@@ -366,19 +393,30 @@ const pousadaImages = [
         >
           <button
             onClick={() => setSelectedImage(null)}
-            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-10"
+            className="absolute top-4 right-4 text-white hover:text-gray-300 transition-colors z-20"
+            aria-label="Fechar"
           >
             ✕
           </button>
 
+          {/* Prev button: bottom on small screens, side on md+; larger hit area and touch feedback */}
+          <button
+            onClick={(e) => { e.stopPropagation(); setSelectedImage((selectedImage - 1 + activeImages.length) % activeImages.length); }}
+            className="absolute left-4 sm:left-4 top-auto sm:top-1/2 bottom-28 sm:bottom-auto translate-y-0 sm:-translate-y-1/2 z-30 text-white bg-white/10 hover:bg-white/20 p-4 md:p-3 rounded-full w-14 h-14 md:w-12 md:h-12 flex items-center justify-center shadow-lg active:scale-95 active:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
+            aria-label="Imagem anterior"
+            role="button"
+          >
+            ‹
+          </button>
+
           <div
-            className="max-w-5xl max-h-[90vh] flex flex-col items-center"
+            className="max-w-5xl max-h-[90vh] flex flex-col items-center z-10"
             onClick={e => e.stopPropagation()}
           >
             <img
               src={activeImages[selectedImage].src}
               alt={activeImages[selectedImage].title}
-              className="max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl"
+              className={`max-w-full max-h-[80vh] object-contain rounded-lg shadow-2xl transition-opacity duration-300 ${imageVisible ? 'opacity-100' : 'opacity-0'}`}
             />
 
             <div className="mt-4 text-center text-white">
@@ -393,8 +431,22 @@ const pousadaImages = [
               </p>
             </div>
           </div>
+
+          {/* Next button */}
+          {/* Next button: bottom on small screens, side on md+; larger hit area and touch feedback */}
+          <button
+            onClick={(e) => { e.stopPropagation(); setSelectedImage((selectedImage + 1) % activeImages.length); }}
+            className="absolute right-4 sm:right-4 top-auto sm:top-1/2 bottom-28 sm:bottom-auto translate-y-0 sm:-translate-y-1/2 z-30 text-white bg-white/10 hover:bg-white/20 p-4 md:p-3 rounded-full w-14 h-14 md:w-12 md:h-12 flex items-center justify-center shadow-lg active:scale-95 active:bg-white/30 focus:outline-none focus:ring-2 focus:ring-white/50"
+            aria-label="Próxima imagem"
+            role="button"
+          >
+            ›
+          </button>
         </div>
       )}
     </section>
   );
 }
+
+// Keyboard support for lightbox navigation
+// (Placed after component so hooks are inside; we add an effect inside the component instead.)
