@@ -19,14 +19,7 @@ export default function EventosTiradentes() {
   const [modo, setModo] = useState<"eventos" | "atrativos">("eventos");
 
   const eventos: Evento[] = [
-    {
-      nome: "Mostra de Cinema de Tiradentes",
-      imagem: "/images/eventosPontos/cinema.jpg",
-      descricao:
-        "Evento gratuito e referência no cinema nacional, com exibições ao ar livre, debates e presença de grandes nomes do audiovisual.",
-      data: "Janeiro",
-      creditos: "Créditos da imagem: Agenda BH",
-    },
+    
     {
       nome: "Desafio Real MTB",
       imagem: "/images/eventosPontos/desafio_real.jpg",
@@ -157,7 +150,7 @@ export default function EventosTiradentes() {
   <div className="bg-violeta-200 text-violeta-900 p-3 rounded-lg mb-10 max-w-2xl mx-auto text-sm">
     <p className="font-semibold mb-1">📄 Para conferir a lista completa de eventos em Tiradentes:</p>    
     <a
-      href="https://www.tiradentes.mg.gov.br/pagina/10626/Calend%C3%A1rio%20de%20Eventos"
+      href="/data/calendarioEventos.pdf"
       target="_blank"
       rel="noopener noreferrer"
       className="underline block hover:text-violeta-700"

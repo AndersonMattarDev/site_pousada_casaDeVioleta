@@ -2,7 +2,7 @@ import WhatsAppIcon from './icons/WhatsAppIcon'
 
 export default function FloatingButtons() {
   return (
-    <div className="fixed right-2 md:right-4 bottom-4 md:bottom-6 flex flex-col gap-2 md:gap-3 z-50">
+    <div className="fixed right-2 md:right-4 bottom-4 md:bottom-28 flex flex-col gap-2 md:gap-3 z-50">
       <a
         href="https://book.securebookings.net/roomrate?id=6289e57c-9863-1727801077-44cb-9577-45a1334be549&lang=br"
         target="_blank"

@@ -30,12 +30,12 @@ export default function Footer() {
 
         
         {/* Direitos autorais */}
-        <div className="text-[10px] leading-none mb-1 opacity-90">
+        <div className="text-[18px] leading-none mb-1 opacity-90">
           © 2025 Casa de Violeta Pousada. Todos os direitos reservados.
         </div>
 
         {/* Crédito do desenvolvedor */}
-        <div className="text-[9px] leading-none opacity-70 hover:opacity-100 transition">
+        <div className="text-[14px] leading-none opacity-70 hover:opacity-100 transition">
           Desenvolvido por{" "}
           <a
             href="https://wa.me/5532984240038"
@@ -43,7 +43,7 @@ export default function Footer() {
             rel="noopener noreferrer"
             className="underline hover:text-violeta-200"
           >
-            Anderson Moreno Mattar – Web Developer
+            Anderson Mattar – FullStack Developer
           </a>
         </div>
       </div>

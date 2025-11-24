@@ -70,12 +70,7 @@ export default function FlatsSection() {
       src: '/images/Flats/flat 02/IMG-20240601-WA0038.jpg',
       title: 'Flat 02 - Charme',
       description: 'Charme e Aconchego'
-    },
-    {
-      src: '/images/Flats/flat 02/IMG-20240601-WA0039.jpg',
-      title: 'Flat 02 - Detalhes',
-      description: 'Cada detalhe pensado para seu conforto'
-    },
+    },    
     {
       src: '/images/Flats/flat 02/IMG-20240601-WA0040.jpg',
       title: 'Flat 02 - Cozinha',
@@ -87,8 +82,8 @@ export default function FlatsSection() {
       description: 'Banheiro perfeito para um banho relaxante'
     },
     {
-      src: '/images/Flats/flat 02/IMG-20240601-WA0043.jpg',
-      title: 'Flat 02 - Sala',
+      src: '/images/Flats/flat 02/camaInteira.jpg',
+      title: 'Flat 02 - Quarto',
       description: 'Ambiente perfeito para descançar'
     },
     {
