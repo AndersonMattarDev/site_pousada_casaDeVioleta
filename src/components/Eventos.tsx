@@ -19,6 +19,32 @@ export default function EventosTiradentes() {
   const [modo, setModo] = useState<"eventos" | "atrativos">("eventos");
 
   const eventos: Evento[] = [
+    {
+      nome: "Carnaval",
+      imagem: "/images/eventosPontos/carnaval.jpg",
+      descricao:
+        "O Carnaval em tiradentes é uma viagem mágica aos tempos coloniais, com desfiles de blocos tradicionais, marchinhas animadas e muita folia nas ruas de pedra.",
+      data: "Fevereiro ou Março",
+      creditos: "Créditos da imagem: qualviagem.com",
+    },
+    
+    {
+      nome: "Planeta Tiradentes",
+      imagem: "/images/eventosPontos/Planeta.webp",
+      descricao:
+        "Música boa e o charme de Tiradentes em um só evento.",
+      data: "Março, Maio, Julho, Setembro e Novembro",
+      creditos: "Créditos da imagem: Planeta Tiradentes",
+    },
+
+    {
+      nome: "Semana Santa",
+      imagem: "/images/eventosPontos/santa.jpeg",
+      descricao:
+        "Fé e tradição marcam a celebração da Semana Santa em Tiradentes.",
+      data: "Abril",
+      creditos: "Créditos da imagem: Agência Minas",
+    },
     
     {
       nome: "Desafio Real MTB",
@@ -59,6 +85,15 @@ export default function EventosTiradentes() {
         "O mais famoso da cidade! Reúne chefs renomados, música e uma experiência única.",
       data: "Agosto",
       creditos: "Créditos da imagem: Nereu Jr. (2022)",
+    },
+
+    {
+      nome: "Semana Criativa",
+      imagem: "/images/eventosPontos/criativa.jpg",
+      descricao:
+        "A Semana Criativa é um evento que celebra a inovação, arte e cultura em Tiradentes.",
+      data: "Outubro",
+      creditos: "Créditos da imagem: Semana Criativa Tiradentes.",
     },
   ];
 
