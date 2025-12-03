@@ -104,7 +104,7 @@ export default function EventosTiradentes() {
      creditos: "Créditos da imagem: Iphan", },
 
     { nome: "Chafariz de São José",
-      imagem: "/images/eventosPontos/Chafariz_de_São_José.jpg", 
+      imagem: "/images/eventosPontos/chafariz_de_sao_jose.jpg", 
       descricao: "Construído em 1749, é um dos cartões-postais de Tiradentes e ainda hoje jorra água cristalina.", 
       creditos: "Créditos da imagem: Wikimedia Commons", },
 
