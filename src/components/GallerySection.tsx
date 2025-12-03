@@ -81,7 +81,7 @@ const pousadaImages = [
 
   const suitesInternasImages = [
     {
-      src: '/images/suites_internas/recepção.jpg',
+      src: '/images/suites_internas/recepcao.jpg',
       title: 'Acesso pela Recepção',
       description: 'Nossas suítes internas são acessadas pela recepção'
     },
