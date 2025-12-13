@@ -100,7 +100,7 @@ export default function EventosTiradentes() {
   const atrativos: Atrativo[] = [
     { nome: "Igreja Matriz de Santo Antônio",
      imagem: "/images/eventosPontos/matriz.jpg", 
-     descricao: "Uma das mais belas igrejas barrocas do Brasil, com fachada coberta de ouro e vista panorâmica da cidade.",
+     descricao: "Uma das mais belas igrejas barrocas do Brasil, com interior decorado em ouro e vista panorâmica da cidade.",
      creditos: "Créditos da imagem: Iphan", },
 
     { nome: "Chafariz de São José",

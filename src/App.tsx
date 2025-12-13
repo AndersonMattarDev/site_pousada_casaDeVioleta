@@ -6,6 +6,7 @@ import FlatsSection from './components/FlatsSection'
 import FlatsVitoria from './components/FlatsVitoria'
 import Eventos from './components/Eventos'
 import ContactSection from './components/ContactSection'
+import TripAdvisorReviews from './components/TripAdvisorReviews'
 import Footer from './components/Footer'
 import FloatingButtons from './components/FloatingButtons'
 
@@ -21,6 +22,7 @@ export default function App() {
         <section id="vila-vitoria" className="pt-24"><FlatsVitoria /></section>
         <section id="eventos" className="pt-24"><Eventos /></section>
         <section id="contato" className="pt-24"><ContactSection /></section>
+        <section id="avaliacoes" className="pt-24"><TripAdvisorReviews /></section>
       </main>
       <Footer />
       <FloatingButtons />

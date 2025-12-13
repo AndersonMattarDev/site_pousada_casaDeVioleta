@@ -25,8 +25,8 @@ export default function FlatsSection() {
     },    
     {
       src: '/images/Flats/flat 01/IMG-20240601-WA0029.jpg',
-      title: 'Flat 01 - Banheiro',
-      description: 'Banheiro completo'
+      title: 'Flat 01 - Cozinha e sala integradas',
+      description: 'Ambiente perfeito para relaxar e saborear delícias'
     },
     {
       src: '/images/Flats/flat 01/IMG-20240601-WA0030.jpg',
