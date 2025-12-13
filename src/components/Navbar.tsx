@@ -30,8 +30,9 @@ export default function Navbar() {
           <a href="#galeria" className="hover:text-violeta-600 text-[20px] font-[700]">Conheça Mais</a>
           <a href="#flats" className="hover:text-violeta-600 text-[20px] font-[700]">Flats</a>
           <a href="#vilavitoria" className="hover:text-violeta-600 text-[20px] font-[700]">Vila Vitória</a>
-          <a href="/#eventos-tiradentes" className="hover:text-violeta-600 text-[20px] font-[700]">Eventos/Pontos Turísticos</a>
+          <a href="#eventos-tiradentes" className="hover:text-violeta-600 text-[20px] font-[700]">Eventos/Pontos Turísticos</a>
           <a href="#contato" className="hover:text-violeta-600 text-[20px] font-[700]">Contato</a>
+          <a href="#avaliacoes" className="hover:text-violeta-600 text-[20px] font-[700]">Avaliações</a>
           
         </nav>
 
@@ -51,8 +52,9 @@ export default function Navbar() {
           <a href="#galeria" onClick={() => setOpen(false)}>Conheça Mais</a>
           <a href="#flats" onClick={() => setOpen(false)}>Flats</a>
           <a href="#vilavitoria" onClick={() => setOpen(false)}>Vila Vitória</a>
-          <a href="/#eventos-tiradentes" onClick={() => setOpen(false)}>Eventos/Pontos Turísticos</a>
+          <a href="#eventos-tiradentes" onClick={() => setOpen(false)}>Eventos/Pontos Turísticos</a>
           <a href="#contato" onClick={() => setOpen(false)}>Contato</a>
+          <a href="#avaliacoes" onClick={() => setOpen(false)}>Avaliações</a>
         </div>
       </div>
     </header>
