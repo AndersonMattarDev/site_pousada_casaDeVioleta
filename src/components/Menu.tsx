@@ -19,8 +19,7 @@ export default function Menu() {
           <li><Link to="/flats">Flats</Link></li>
           <li><Link to="/vilavitoria">Vila Vitória</Link></li>
           <li><Link to="/eventos-pontos">Eventos/Pontos Turísticos</Link></li>
-          <li><Link to="/contato">Contato</Link></li>
-          <li><Link to="/avaliacoes">Avaliações</Link></li>
+          <li><Link to="/contato">Contato</Link></li>          
         </ul>
       </nav>
     </header>
