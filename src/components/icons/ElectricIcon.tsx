@@ -3,7 +3,7 @@ interface IconProps {
   height?: number;
 }
 
-export default function ElectricIcon({ width = 24, height = 24 }: IconProps) {
+export default function ElectricIcon({ width = 30, height = 30 }: IconProps) {
   return (
     <svg
       width={width}

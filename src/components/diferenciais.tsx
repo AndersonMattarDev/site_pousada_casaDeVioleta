@@ -30,6 +30,28 @@ export default function Diferenciais() {
           </div>
         </div>
 
+        
+        {/* Diferencial destaque */}
+        <div className="flex justify-center mb-20">
+          <div className="w-full max-w-2xl">
+            
+            <DiferencialCard
+              highlight
+              badge="Novidade"
+              images={[
+                "/images/carregadorEletrico/carregador.jpg",
+                "/images/carregadorEletrico/carregadorLonge.jpg"
+              ]}
+              icon={iconWrapper(<ElectricIcon width={30} height={30} />)}
+              title="Carregamento para veículos elétricos"
+              description="Agora contamos com ponto de recarga 
+              exclusivo para veículos elétricos. Mais comodidade e 
+              tranquilidade durante sua estadia."
+            />
+
+          </div>
+        </div>
+
         {/* Diferenciais principais */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">
   
@@ -53,24 +75,6 @@ export default function Diferenciais() {
 
         </div>
 
-        {/* Diferencial destaque */}
-        <div className="flex justify-center">
-          <div className="w-full max-w-2xl">
-            
-            <DiferencialCard
-              highlight
-              badge="Novidade"
-              images={[
-                "/images/carregadorEletrico/carregador.jpg",
-                "/images/carregadorEletrico/carregadorLonge.jpg"
-              ]}
-              icon={iconWrapper(<ElectricIcon width={24} height={24} />)}
-              title="Carregamento para veículos elétricos"
-              description="Agora contamos com ponto de recarga exclusivo para veículos elétricos. Mais comodidade e tranquilidade durante sua estadia."
-            />
-
-          </div>
-        </div>
 
       </div>
     </section>
