@@ -5,6 +5,7 @@ interface DiferencialCardProps {
   icon: ReactNode;
   title: string;
   description: string;
+  text?: string;
   highlight?: boolean;
   images?: string[];
   badge?: string;
@@ -14,6 +15,7 @@ export default function DiferencialCard({
   icon,
   title,
   description,
+  text,
   highlight = false,
   images,
   badge
@@ -80,6 +82,11 @@ export default function DiferencialCard({
         <p className={`${highlight ? 'text-gray-600' : 'text-gray-500 text-sm'} leading-relaxed`}>
           {description}
         </p>
+        {text && (
+          <span className="mt-2 text-black text-md">
+            {text}
+          </span>
+        )}
       </div>
 
       {/* MODAL */}

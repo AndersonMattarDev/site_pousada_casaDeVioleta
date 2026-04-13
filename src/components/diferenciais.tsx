@@ -46,7 +46,10 @@ export default function Diferenciais() {
               title="Carregamento para veículos elétricos"
               description="Agora contamos com ponto de recarga 
               exclusivo para veículos elétricos. Mais comodidade e 
-              tranquilidade durante sua estadia."
+              tranquilidade durante sua estadia. Uso primariamente para hóspedes, mas também disponível para visitantes mediante
+              agendamento prévio."
+              text="Uso prioritário para hóspedes, mas também disponível para visitantes mediante
+              agendamento prévio."
             />
 
           </div>
