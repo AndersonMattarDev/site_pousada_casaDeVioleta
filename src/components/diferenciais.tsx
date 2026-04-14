@@ -46,14 +46,20 @@ export default function Diferenciais() {
               title="Carregamento para veículos elétricos"
               description="Agora contamos com ponto de recarga 
               exclusivo para veículos elétricos. Mais comodidade e 
-              tranquilidade durante sua estadia. Uso primariamente para hóspedes, mas também disponível para visitantes mediante
+              tranquilidade durante sua estadia. Uso prioritário para hóspedes, 
+              mas também disponível para visitantes mediante
               agendamento prévio."
-              text="Uso prioritário para hóspedes, mas também disponível para visitantes mediante
-              agendamento prévio."
-            />
-
+              text="Em parceria com a NowCharge, líder em soluções de mobilidade elétrica,
+              oferecemos um serviço de recarga eficiente e sustentável. 
+              Aproveite a conveniência de carregar seu veículo enquanto desfruta do 
+              charme de Tiradentes." 
+              link="https://nowcharge.com.br/"
+              linkImage="/images/carregadorEletrico/logoNow.jpg"
+              linkImageAlt="Logo Now"
+            />              
           </div>
         </div>
+        
 
         {/* Diferenciais principais */}
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-5xl mx-auto mb-16">

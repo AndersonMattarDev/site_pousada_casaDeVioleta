@@ -9,6 +9,9 @@ interface DiferencialCardProps {
   highlight?: boolean;
   images?: string[];
   badge?: string;
+  link?: string;
+  linkImage?: string;
+  linkImageAlt?: string;
 }
 
 export default function DiferencialCard({
@@ -18,7 +21,10 @@ export default function DiferencialCard({
   text,
   highlight = false,
   images,
-  badge
+  badge,
+  link,
+  linkImage,
+  linkImageAlt = 'Logo'
 }: DiferencialCardProps) {
   const [selectedImage, setSelectedImage] = useState<string | null>(null);
 
@@ -83,10 +89,30 @@ export default function DiferencialCard({
           {description}
         </p>
         {text && (
-          <span className="mt-2 text-black text-md">
+          <span className="mt-2 text-gray-600 text-md">
             {text}
           </span>
         )}
+        {link && (
+          <a
+            href={link}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center justify-center gap-3 rounded-full bg-violeta-100 text-white py-2 px-4 transition-transform duration-300 hover:scale-[1.02] hover:bg-violeta-200"
+          >
+            {linkImage && (
+              <img
+                src={linkImage}
+                alt={linkImageAlt}
+                className="h-12 w-auto rounded-full"
+              />
+            )}
+            <span className="font-semibold text-sm md:text-base text-black">
+              Clique aqui para baixar o app e conferir os valores
+            </span>
+          </a>
+        )}
+
       </div>
 
       {/* MODAL */}
