@@ -58,17 +58,17 @@ export default function DiferencialCard({
 
       {/* IMAGENS */}
       {images && images.length > 0 && (
-        <div className="grid grid-cols-2 gap-2 p-2 bg-gray-50">
+        <div className="grid grid-cols-2 gap-3 p-4 bg-gradient-to-b from-gray-50 to-white">
           {images.map((img: string, index: number) => (
             <div
               key={index}
-              className="h-40 w-full overflow-hidden rounded-lg cursor-pointer"
+              className="h-56 w-full rounded-xl overflow-hidden cursor-pointer bg-white border border-gray-100 hover:border-violeta-300 shadow-sm hover:shadow-md transition-all duration-300"
               onClick={() => setSelectedImage(img)}
             >
               <img
                 src={img}
                 alt={`${title} ${index + 1}`}
-                className="w-full h-full object-cover transition duration-300 hover:scale-105"
+                className="w-full h-full object-cover transition duration-300 hover:scale-110"
               />
             </div>
           ))}

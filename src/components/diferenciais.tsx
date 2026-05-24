@@ -40,7 +40,7 @@ export default function Diferenciais() {
               badge="Novidade"
               images={[
                 "/images/carregadorEletrico/carregador.jpg",
-                "/images/carregadorEletrico/carregadorLonge.jpg"
+                "/images/carregadorEletrico/carregadorBeija.jpeg",
               ]}
               icon={iconWrapper(<ElectricIcon width={30} height={30} />)}
               title="Carregamento para veículos elétricos"
