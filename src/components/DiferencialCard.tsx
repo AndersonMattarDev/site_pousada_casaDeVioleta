@@ -26,7 +26,7 @@ export default function DiferencialCard({
   linkImage,
   linkImageAlt = 'Logo'
 }: DiferencialCardProps) {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [zoomImage, setZoomImage] = useState<string | null>(null);
 
   return (
     <div
@@ -58,19 +58,20 @@ export default function DiferencialCard({
 
       {/* IMAGENS */}
       {images && images.length > 0 && (
-        <div className="grid grid-cols-2 gap-2 p-2 bg-gray-50">
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-gray-50">
           {images.map((img: string, index: number) => (
-            <div
+            <button
               key={index}
-              className="h-40 w-full overflow-hidden rounded-lg cursor-pointer"
-              onClick={() => setSelectedImage(img)}
+              type="button"
+              onClick={() => setZoomImage(img)}
+              className="h-52 overflow-hidden rounded-2xl border border-transparent transition duration-200 hover:border-violeta-200"
             >
               <img
                 src={img}
-                alt={`${title} ${index + 1}`}
-                className="w-full h-full object-cover transition duration-300 hover:scale-105"
+                alt={`${title} miniatura ${index + 1}`}
+                className="w-full h-full object-cover"
               />
-            </div>
+            </button>
           ))}
         </div>
       )}
@@ -116,13 +117,13 @@ export default function DiferencialCard({
       </div>
 
       {/* MODAL */}
-      {selectedImage && (
+      {zoomImage && (
         <div
           className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
-          onClick={() => setSelectedImage(null)}
+          onClick={() => setZoomImage(null)}
         >
           <img
-            src={selectedImage}
+            src={zoomImage}
             className="max-w-[90%] max-h-[90%] rounded-lg"
           />
         </div>
