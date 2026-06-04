@@ -28,6 +28,12 @@ export default function DiferencialCard({
 }: DiferencialCardProps) {
   const [zoomImage, setZoomImage] = useState<string | null>(null);
 
+
+  function setSelectedImage(img: string): void {
+    // set the image to be zoomed in the modal
+    setZoomImage(img);
+  }
+
   return (
     <div
       className={`
@@ -58,11 +64,7 @@ export default function DiferencialCard({
 
       {/* IMAGENS */}
       {images && images.length > 0 && (
-<<<<<<< HEAD
-        <div className="grid grid-cols-2 gap-3 p-4 bg-gradient-to-b from-gray-50 to-white">
-=======
         <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-gray-50">
->>>>>>> c0c8672c62578a5c741450c8b0e593300abbde80
           {images.map((img: string, index: number) => (
             <button
               key={index}
