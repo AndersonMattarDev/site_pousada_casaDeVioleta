@@ -86,7 +86,7 @@ Obs: check-in é feito na pousada casa de violeta, o endereço é Praça das Mer
     {/* Botão de Reserva */}
     <div className="flex justify-center mb-8">
       <a
-        href="https://wa.me/5532984409797?text=Olá! Gostaria de fazer uma reserva para o Flat Vila Vitória."
+        href="https://wa.me/5532999823964?text=Olá! Gostaria de fazer uma reserva para o Flat Vila Vitória."
         target="_blank"
         rel="noopener noreferrer"
         className="bg-green-500 text-white px-6 py-3 rounded-lg shadow-lg hover:bg-green-600 transition-all flex items-center gap-2"

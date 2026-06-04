@@ -26,7 +26,7 @@ export default function DiferencialCard({
   linkImage,
   linkImageAlt = 'Logo'
 }: DiferencialCardProps) {
-  const [selectedImage, setSelectedImage] = useState<string | null>(null);
+  const [zoomImage, setZoomImage] = useState<string | null>(null);
 
   return (
     <div
@@ -58,10 +58,15 @@ export default function DiferencialCard({
 
       {/* IMAGENS */}
       {images && images.length > 0 && (
+<<<<<<< HEAD
         <div className="grid grid-cols-2 gap-3 p-4 bg-gradient-to-b from-gray-50 to-white">
+=======
+        <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 p-4 bg-gray-50">
+>>>>>>> c0c8672c62578a5c741450c8b0e593300abbde80
           {images.map((img: string, index: number) => (
-            <div
+            <button
               key={index}
+<<<<<<< HEAD
               className="h-56 w-full rounded-xl overflow-hidden cursor-pointer bg-white border border-gray-100 hover:border-violeta-300 shadow-sm hover:shadow-md transition-all duration-300"
               onClick={() => setSelectedImage(img)}
             >
@@ -69,8 +74,18 @@ export default function DiferencialCard({
                 src={img}
                 alt={`${title} ${index + 1}`}
                 className="w-full h-full object-cover transition duration-300 hover:scale-110"
+=======
+              type="button"
+              onClick={() => setZoomImage(img)}
+              className="h-52 overflow-hidden rounded-2xl border border-transparent transition duration-200 hover:border-violeta-200"
+            >
+              <img
+                src={img}
+                alt={`${title} miniatura ${index + 1}`}
+                className="w-full h-full object-cover"
+>>>>>>> c0c8672c62578a5c741450c8b0e593300abbde80
               />
-            </div>
+            </button>
           ))}
         </div>
       )}
@@ -116,13 +131,13 @@ export default function DiferencialCard({
       </div>
 
       {/* MODAL */}
-      {selectedImage && (
+      {zoomImage && (
         <div
           className="fixed inset-0 bg-black/80 flex items-center justify-center z-50"
-          onClick={() => setSelectedImage(null)}
+          onClick={() => setZoomImage(null)}
         >
           <img
-            src={selectedImage}
+            src={zoomImage}
             className="max-w-[90%] max-h-[90%] rounded-lg"
           />
         </div>
