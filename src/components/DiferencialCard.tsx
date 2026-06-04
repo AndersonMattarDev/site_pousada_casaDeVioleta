@@ -30,8 +30,7 @@ export default function DiferencialCard({
 
 
   function setSelectedImage(img: string): void {
-    // set the image to be zoomed in the modal
-    setZoomImage(img);
+    throw new Error('Function not implemented.');
   }
 
   return (
@@ -68,7 +67,6 @@ export default function DiferencialCard({
           {images.map((img: string, index: number) => (
             <button
               key={index}
-<<<<<<< HEAD
               className="h-56 w-full rounded-xl overflow-hidden cursor-pointer bg-white border border-gray-100 hover:border-violeta-300 shadow-sm hover:shadow-md transition-all duration-300"
               onClick={() => setSelectedImage(img)}
             >
@@ -76,16 +74,6 @@ export default function DiferencialCard({
                 src={img}
                 alt={`${title} ${index + 1}`}
                 className="w-full h-full object-cover transition duration-300 hover:scale-110"
-=======
-              type="button"
-              onClick={() => setZoomImage(img)}
-              className="h-52 overflow-hidden rounded-2xl border border-transparent transition duration-200 hover:border-violeta-200"
-            >
-              <img
-                src={img}
-                alt={`${title} miniatura ${index + 1}`}
-                className="w-full h-full object-cover"
->>>>>>> c0c8672c62578a5c741450c8b0e593300abbde80
               />
             </button>
           ))}
